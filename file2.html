@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Bouncing Clouds</title>
+<style>
+#mainContent {
+background‐color:#A2BFCE;
+border‐radius: 4px;
+padding: 10px;
+width: 600px;
+height: 800px;
+overflow: hidden;
+}
+@keyframes bobble {
+0% {
+transform: translate3d(50px, 40px, 0px);
+animation‐timing‐function: ease‐in;
+}
+50% {
+transform: translate3d(50px, 50px, 0px);
+animation‐timing‐function: ease‐out;
+}
+100% {
+transform: translate3d(50px, 40px, 0px);
+}
+}
+.cloud {
+position: absolute;
+}
+#bigcloud {
+animation: bobble 2s infinite;
+margin‐left: 100px;
+margin‐top: 15px;
+}
+#smallcloud {
+animation: bobble 4s infinite;
+margin‐top: 65px;
+margin‐left: 200px;
+}</style>
+</head>
+<body>
+<div id="mainContent">
+<img id="bigcloud" alt="#"
+class="cloud" height="154"
+src="cloud1.png"
+width="238">
+<img id="smallcloud" alt="#" class="cloud" height="103"
+src="cloud.png" width="158">
+</div>
+</body>
+</html>
